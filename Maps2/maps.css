@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+
+}
+
+body {
+  background: url(images/discovers.jpeg);
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+.btn_country {
+  font-weight: bold;
+  transition-duration: 0.8s;
+   border: black 5px solid;
+  font-size: x-large;
+  
+}
+
+header .burger {
+  display: none;
+}
+
+#id_search{
+  border: black 2px solid;
+}
+
+#btn_search{
+  background-color: transparent;
+  border: brown 4px solid;
+font-size: 1.5em;
+color: brown
+}
+
+#btn_search:hover{
+  background-color: brown;
+  color:white;
+}
+
+main #id_name {
+  font-weight: bold;
+  padding: 10px;
+  font-size: 3em;
+}
+
+main #id_flag {
+  border-radius: 15px;
+
+}
+
+main ul .details {
+  font-weight: bold;
+  
+  
+    
+}
+
+main .inline {
+  color:rgb(84, 10, 10) ;
+  font-weight: bold;
+  transition-duration: 0.5s;
+  border: rgb(84, 10, 10) 5px solid;
+font-size: x-large;
+align-items: center;
+}
+
+
+@media (max-width:768px){
+  .container-fluid{
+    min-width: 100%;
+  }
+    header{
+      padding:0 8px;
+    }
+  
+    header .burger{
+      display: block;
+      
+      
+    }
+  
+    header #nav_open{
+      display: none;
+      position: absolute;
+      top:48px;
+      right:0;
+      background: white;
+      width:100%;
+      max-width: 260px;
+    }
+  
+    header #nav_open ul{
+      display: block;
+     
+    }
+  
+    header #nav_open ul li{
+      text-align: center;
+      border-bottom: 1px solid grey;
+    }
+  
+    header #nav_open ul li:hover{
+      background: #ddd;
+    }
+  
+  }
+  

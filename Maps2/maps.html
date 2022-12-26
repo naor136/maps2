@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/global.css"> -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="maps.css">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" defer src="js_maps/app_maps.js"></script>
+</head>
+
+<body>
+    <header class="container-fluid">
+        <div class="container">
+            <div class="burger" id="burger_btn">
+                <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+            </div>
+            <nav id="nav_open" class="d-flex justify-content-around">
+                <ul id="" class="ul_nav d-flex list-unstyled justify-content-between mt-4">
+                    <li class="me-4"><button class="btn_country btn btn-outline-dark">USA</button></li>
+                    <li class="me-4"><button class="btn_country btn btn-outline-dark">Israel</button></li>
+                    <li class="me-4"><button class="btn_country btn btn-outline-dark">United Kingdom</button></li>
+                    <li class="me-4"><button class="btn_country btn btn-outline-dark">Spain</button></li>
+                    <li class="me-4"><button class="btn_country btn btn-outline-dark">Russia</button></li>
+                </ul>
+                <form id="id_form" class="col-4 mt-4 d-flex">
+                    <input id="id_search" class="form-control w-50 h-50 me-2 mt-2" type="search">
+                    <button id="btn_search" type="button" class="btn w-50 h-60 mb-2"><strong>Search</strong></button>
+                </form>
+            </nav>
+        </div>
+        
+    </header>
+
+    <main class="container">
+
+        <div class=" d-flex justify-content-center align-items-center">
+            <div><h3 id="id_name" class=" text-decoration-underline">name</h3>
+            <img id="id_flag"  class="d-flex" src="" alt=""></div>
+            <ul class="m-4 list-unstyled">
+                <li>
+                    <h3 class="details">Capital: <span id="id_capital" ></span> </h3>
+                </li>
+                <li>
+                    <h3 class="details">Language: <span id="id_lan"></span></h3>
+                </li>
+                <li>
+                    <h3 class="details">Population: <span id="id_pop"></span></h3>
+                </li>
+                <li>
+                    <h3 class="details">Coin: <span id="id_coin"></span> </h3>
+                </li>
+                <div id="id_row" class="row">
+                </div>
+            </ul>
+        </div>
+        <div id="map" class="col-12">
+            <iframe id="id_map" class="mt-4 col-12  mb-4 p-0" style="height: 50vh;" src="" frameborder="0" scrolling="no"
+                marginheight="0" marginwidth="0"></iframe>
+        </div>
+
+    </main>
+
+    <script src="js_maps/burger.js"></script>
+</body>
+
+</html>
